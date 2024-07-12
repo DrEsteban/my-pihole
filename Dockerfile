@@ -5,4 +5,5 @@ RUN mkdir -p /var/www/html && \
     echo "memory_limit = 512M" >> /var/www/html/.user.ini && \
     usermod -aG pihole root && \
     usermod -aG pihole www-data && \
-    usermod -aG root www-data
+    usermod -aG root www-data && \
+    usermod -aG root pihole
